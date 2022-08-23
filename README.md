@@ -147,6 +147,16 @@ A test statistic is a numerical summary of the data that is compared to what wou
 With subject to the above analysis, we come to a conclusion that the mean temperature level maintained in the COLD STORAGE in the month of March is greater than or equal to 3.9C.Though the supervisor was vigilant with the temperature maintained, he has to further notice that it is the month of summer where the atmospheric temperature is very high. So the maintained temperature level (>=3.9C) in the plant may not prove beneficial, which may lead to the products turning sour. 
 
 
+With the given data we conclude that, 
+ 
+•	Statistically the maintained temperature (>=3.9C) may not prove beneficial in humid months like summer. 
+ 
+ 
+•	If the dairy products turns sour even after maintaining the temperature level to <= 3.9C, then we strictly need to watch the temperature level in the plant for some more days with more number of samples. 
+ 
+•	If everything works fine with the maintenance plant but if the customers are not satisfied with the products, the COLD STORAGE supplies, then necessary action can be taken against the vendor, from where all the dairy products are procured. 
+ 
+•	The supervisor should be able to solve the problem immediately with the above cause - effect scenarios. If all these things taken into consideration, then no further problems may arise in the customer end. 
 
 
 
