@@ -20,6 +20,22 @@ The exploration report comprises the following:
 
 •	Reading insights from the dataset 
 
+PROBLEM STATEMENT : 
+
+1. Cold Storage started its operations in Jan 2016. They are in the business of storing Pasteurized Fresh Whole or Skimmed Milk, Sweet Cream, Flavoured Milk Drinks. To ensure that there is no change of texture, body appearance, separation of fats the optimal temperature to be maintained is between 2 - 4 C.
+
+In the first year of business they outsourced the plant maintenance work to a professional company with stiff penalty clauses. It was agreed that if the it was statistically proven that probability of temperature going outside the 2 - 4 C during the one-year contract was above 2.5% and less than 5% then the penalty would be 10% of AMC (annual maintenance case). In case it exceeded 5% then the penalty would be 25% of the AMC fee. 
+
+Assesing mean cold storage temperature for Summer, Winter and Rainy Season, overall mean for the full year, Standard Deviation for the full year, assuming Normal distribution, the probability of temperature having fallen below 2 C,  the probability of temperature having gone above 4 C, Penalty for the company are in the scope of the Analysis.
+
+
+2. In Mar 2018, Cold Storage started getting complaints from their Clients that they have been getting complaints from end consumers of the dairy products going sour and often smelling. On getting these complaints, the supervisor pulls out data of last 35 days’ temperatures. As a safety measure, the Supervisor decides to be vigilant to maintain the temperature 3.9 C or below.
+
+Assume 3.9 C as upper acceptable value for mean temperature and at alpha = 0.1 do you feel that there is need for some corrective action in the Cold Storage Plant or is it that the problem is from procurement side from where Cold Storage is getting the Dairy Products.
+
+Stating hypothesis, performing hypothesis test and determining p-value to check the if corrective action is needed at the cold storage plant and thereby providing inferences.
+
+
 ASSUMPTIONS :
 
 •	Unlike population distribution, the sample distribution always follows a normal distribution with increasing sample size (CENTRAL LIMIT THEOREM). 
@@ -74,7 +90,7 @@ The probability distribution is calculated for values lesser than 2C and greater
 
 Approximately 2.9% of the values falls under the range of 2C temperature.
 
-2.	P(X>4) =0.0207 
+2.	P(X>4) = 0.0207 
  
  Approximately 2% of the values falls above the range of 4C temperature. 
  
@@ -107,13 +123,14 @@ A statistical hypothesis test is a method of statistical inference. It is a hypo
 
 For the given MARCH dataset, the hypothesis testing can be done as, 
 
-Null hypothesis H0: Mean temperature (mu) = 3.9C 
+Null hypothesis H0: Mean temperature (mu) <= 3.9C 
+Alternate hypothesis HA: Mean temperature (mu) > 3.9C
 
 Let’s start the Z test
 
 Hypothesis for Z-Test
-H0:μO<= 3.9[Temperature is maintained below or equal to 3.9Degree and hence no corrective action is required.
-HA:μO> 3.9[Temperature is above 3.9Degree andhence corrective action is required.]
+H0:μO <= 3.9[Temperature is maintained below or equal to 3.9 Degree and hence no corrective action is required].
+HA:μO > 3.9[Temperature is above 3.9 Degree and hence corrective action is required].
 Where  μO is mean of the sample data set.
 As alternate hypothesis is with a greater sign, it is a Right tailed test,As mentioned standard deviation of the complete dataset calculated  would  be  used  as  a  Population  standard  deviation.
 Hence population SD ( σ ) = 0.4658319
@@ -126,7 +143,7 @@ Given value of alpha =0.1
 P value ispValue = pnorm(z,lower.tail = FALSE)
 pValue[1] 0.1727303
 
-Let’s perform the ttest
+Let’s perform the t test
 
 Hypothesis for T-Test 
 H0:μO<= 3.9[Temperature is maintained below or equal to 3.9Degree and hence no corrective action is required]
